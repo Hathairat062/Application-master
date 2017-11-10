@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="projectandroid.coe.application.Tdirec">
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q1"
+        android:textSize="22dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:layout_marginTop="40dp"
+        android:text="Answer1"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Answer2"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Answer3"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Answer4"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+
+
+</LinearLayout>

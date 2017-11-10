@@ -19,13 +19,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        /*
         <activity android:name=".SplashScreen" />
         <activity android:name=".Number" />
-        <activity android:name=".mFragments.learnFragment" />
         <activity android:name=".Times" />
         <activity android:name=".Greet" />
         <activity android:name=".General" />
-        <activity android:name=".Direction"></activity>
+        <activity android:name=".Direction" />
+        <activity android:name=".Tnumber" />
+        <activity android:name=".Ttimes" />
+        <activity android:name=".Tgreet" />
+        <activity android:name=".Tgeneral" />
+        <activity android:name=".Tdirec" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>
