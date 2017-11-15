@@ -3,6 +3,7 @@ package projectandroid.coe.application;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 
@@ -40,6 +41,61 @@ public class Greet extends AppCompatActivity {
         //listView.setAdapter(arrayAdapter);
         //listView.setOnItemClickListener(this);
 
+        listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                switch (groupPosition) {
+                    case 0:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g1);
+                        mMedia.start();
+                        break;
+                    case 1:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g2);
+                        mMedia.start();
+                        break;
+                    case 2:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g3);
+                        mMedia.start();
+                        break;
+                    case 3:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g4);
+                        mMedia.start();
+                        break;
+                    case 4:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g5);
+                        mMedia.start();
+                        break;
+                    case 5:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g6);
+                        mMedia.start();
+                        break;
+                    case 6:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g7);
+                        mMedia.start();
+                        break;
+                    case 7:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g8);
+                        mMedia.start();
+                        break;
+                    case 8:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g9);
+                        mMedia.start();
+                        break;
+                    case 9:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g10);
+                        mMedia.start();
+                        break;
+                    case 10:
+                        mMedia = MediaPlayer.create(Greet.this, R.raw.g11);
+                        mMedia.start();
+                        break;
+
+            }
+                return false;
+            }
+        });
+
     }
 
     private void initData() {
@@ -64,23 +120,23 @@ public class Greet extends AppCompatActivity {
         List<String> gr2 = new ArrayList<>();
         gr2.add("Transcription:    chăn-chêu                 " + "               Thai word:   ฉันชื่อ...");
         List<String> gr3= new ArrayList<>();
-        gr3.add("Transcription:    kun-maa-jàak-têe-năi      " + "               Thai word:   คุณมาจากที่ไหน");
+        gr3.add("Transcription:    kun-maa-jàak-têe-năi      " + "                                                   Thai word:   คุณมาจากที่ไหน");
         List<String> gr4 = new ArrayList<>();
-        gr4.add("Transcription:    chăn-maa-jàak-bprà-tâyt      " + "              Thai word:   ฉันมาจากประเทศ...");
+        gr4.add("Transcription:    chăn-maa-jàak-bprà-tâyt      " + "                                                 Thai word:   ฉันมาจากประเทศ...");
         List<String> gr5 = new ArrayList<>();
         gr5.add("Transcription:    kun-aa-yú-tâo-rai         " + "               Thai word:   คุณอายุเท่าไร");
         List<String> gr6 = new ArrayList<>();
         gr6.add("Transcription:    chăn-aa-yú-22-bpee        " + "               Thai word:   ฉันอายุ 22 ปี");
         List<String> gr7 = new ArrayList<>();
-        gr7.add("Transcription:    kun-rian-yòo-têe-năi      " + "               Thai word:   คุณเรียนอยู่ที่ไหน");
+        gr7.add("Transcription:    kun-rian-yòo-têe-năi      " + "                                                     Thai word:   คุณเรียนอยู่ที่ไหน");
         List<String> gr8 = new ArrayList<>();
         gr8.add("Transcription:    chăn-rian-yòo-têe         " + "               Thai word:   ฉันเรียนอยู่ที่...");
         List<String> gr9 = new ArrayList<>();
-        gr9.add("Transcription:    yin-dee-têe-dâi-róo-jàk   " + "               Thai word:   ยินดีที่ได้รู้จัก");
+        gr9.add("Transcription:    yin-dee-têe-dâi-róo-jàk   " + "                                                      Thai word:   ยินดีที่ได้รู้จัก");
         List<String> gr10 = new ArrayList<>();
-        gr10.add("Transcription:   chăn-bpen-nák-sèuk-săa    " + "               Thai word:   ฉันเป็นนักศึกษา");
+        gr10.add("Transcription:   chăn-bpen-nák-sèuk-săa    " + "                                                       Thai word:   ฉันเป็นนักศึกษา");
         List<String> gr11 = new ArrayList<>();
-        gr11.add("Transcription:   dtìt-dtòr-gan-èek-ná       " + "              Thai word:   ติดต่อกันอีกนะ");
+        gr11.add("Transcription:   dtìt-dtòr-gan-èek-ná       " + "                                                       Thai word:   ติดต่อกันอีกนะ");
 
 
         listHash.put(listDataHeader.get(0),gr1);

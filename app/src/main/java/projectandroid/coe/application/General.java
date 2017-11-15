@@ -3,6 +3,7 @@ package projectandroid.coe.application;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 
@@ -41,6 +42,157 @@ public class General extends AppCompatActivity  {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings);
         //listView.setAdapter(arrayAdapter);
         //listView.setOnItemClickListener(this);
+
+        listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                switch (groupPosition) {
+                    case 0:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge1);
+                        mMedia.start();
+                        break;
+                    case 1:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge2);
+                        mMedia.start();
+                        break;
+                    case 2:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge3);
+                        mMedia.start();
+                        break;
+                    case 3:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge31);
+                        mMedia.start();
+                        break;
+
+                    case 4:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge5);
+                        mMedia.start();
+                        break;
+
+                    case 5:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge6);
+                        mMedia.start();
+                        break;
+                    case 6:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge7);
+                        mMedia.start();
+                        break;
+                    case 7:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge8);
+                        mMedia.start();
+                        break;
+
+                    case 8:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge9);
+                        mMedia.start();
+                        break;
+
+                    case 9:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge10);
+                        mMedia.start();
+                        break;
+
+                    case 10:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge11);
+                        mMedia.start();
+                        break;
+
+                    case 11:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge12);
+                        mMedia.start();
+                        break;
+
+                    case 12:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge13);
+                        mMedia.start();
+                        break;
+
+                    case 13:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge14);
+                        mMedia.start();
+                        break;
+                    case 14:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge15);
+                        mMedia.start();
+                        break;
+
+                    case 15:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge16);
+                        mMedia.start();
+                        break;
+                    case 16:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge17);
+                        mMedia.start();
+                        break;
+
+                    case 17:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge18);
+                        mMedia.start();
+                        break;
+
+                    case 18:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge19);
+                        mMedia.start();
+                        break;
+
+                    case 19:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge20);
+                        mMedia.start();
+                        break;
+
+                    case 20:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge21);
+                        mMedia.start();
+                        break;
+
+                    case 21:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge32);
+                        mMedia.start();
+                        break;
+
+                    case 22:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge22);
+                        mMedia.start();
+                        break;
+
+                    case 23:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge23);
+                        mMedia.start();
+                        break;
+                    case 24:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge24);
+                        mMedia.start();
+                        break;
+                    case 25:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge25);
+                        mMedia.start();
+                        break;
+                    case 26:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge26);
+                        mMedia.start();
+                        break;
+                    case 27:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge27);
+                        mMedia.start();
+                        break;
+
+                    case 28:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge28);
+                        mMedia.start();
+                        break;
+                    case 29:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge29);
+                        mMedia.start();
+                        break;
+                    case 30:
+                        mMedia = MediaPlayer.create(General.this, R.raw.ge30);
+                        mMedia.start();
+                        break;
+            }
+                return false;
+            }
+        });
 
 
     }
@@ -110,7 +262,7 @@ public class General extends AppCompatActivity  {
         List<String> ge13 = new ArrayList<>();
         ge13.add("Transcription:                                                        kun-pôot-paa-săa ang-grìt-dâi-măi                   " + "                             Thai word:                                                       คุณพูดภาษาอังกฤษได้ไหม");
         List<String> ge14 = new ArrayList<>();
-        ge14.add("Transcription:  kun-pôot-paa-săa-tai-dâi-măi   " + "                 Thai word:  คุณพูดภาษาไทยได้ไหม");
+        ge14.add("Transcription:  kun-pôot-paa-săa-tai-dâi-măi   " + "                                                   Thai word:  คุณพูดภาษาไทยได้ไหม");
         List<String> ge15 = new ArrayList<>();
         ge15.add("Transcription:  dâi                            " + "                 Thai word:  ได้");
         List<String> ge16 = new ArrayList<>();
@@ -118,7 +270,7 @@ public class General extends AppCompatActivity  {
         List<String> ge17 = new ArrayList<>();
         ge17.add("Transcription:  mâi-kâo-jai                    " + "                 Thai word:  ไม่เข้าใจ");
         List<String> ge18 = new ArrayList<>();
-        ge18.add("Transcription:  pôot-cháa-cháa-nòi-dâi-măi     " + "                 Thai word:  พูดช้าๆหน่อยได้ไหม");
+        ge18.add("Transcription:  pôot-cháa-cháa-nòi-dâi-măi     " + "                                                    Thai word:  พูดช้าๆหน่อยได้ไหม");
         List<String> ge19 = new ArrayList<>();
         ge19.add("Transcription:  yin-dee                        " + "                 Thai word:  ยินดี");
         List<String> ge20 = new ArrayList<>();
@@ -142,7 +294,7 @@ public class General extends AppCompatActivity  {
         List<String> ge29 = new ArrayList<>();
         ge29.add("Transcription:  chôhk-dee                      " + "                 Thai word:  โชคดี");
         List<String> ge30 = new ArrayList<>();
-        ge30.add("Transcription:  doo-lae-dtua-ayng-dûay         " + "                 Thai word:  ดูแลตัวเองด้วย");
+        ge30.add("Transcription:  doo-lae-dtua-ayng-dûay         " + "                                                 Thai word:  ดูแลตัวเองด้วย");
         List<String> ge31 = new ArrayList<>();
         ge31.add("Transcription:  gà-rú-naa                      " + "                 Thai word:  กรุณา");
 

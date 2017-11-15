@@ -4,7 +4,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
 
@@ -12,13 +11,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Direction extends AppCompatActivity  implements AdapterView.OnItemClickListener{
+public class Direction extends AppCompatActivity  {
 
     private ExpandableListView listView;
     private ExpandableListAdapter listAdapter;
     private List<String> listDataHeader;
     private HashMap<String,List<String>> listHash;
     MediaPlayer mMedia;
+
 
 
 
@@ -47,16 +47,180 @@ public class Direction extends AppCompatActivity  implements AdapterView.OnItemC
         listView.setAdapter(listAdapter);
 
         //listView = (ListView) findViewById(R.id.direc);
-        //ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings);
+       // ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings);
         //listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener(this);
+        //listView.setOnItemClickListener(this);
+
+        listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                switch (groupPosition) {
+                    case 0:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr25);
+                        mMedia.start();
+                        break;
+                    case 1:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr26);
+                        mMedia.start();
+                        break;
+                    case 2:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr27);
+                        mMedia.start();
+                        break;
+                    case 3:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr28);
+                        mMedia.start();
+                        break;
+
+                    case 4:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr29);
+                        mMedia.start();
+                        break;
+
+                    case 5:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr30);
+                        mMedia.start();
+                        break;
+                    case 6:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr31);
+                        mMedia.start();
+                        break;
+                    case 7:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr32);
+                        mMedia.start();
+                        break;
+
+                    case 8:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr33);
+                        mMedia.start();
+                        break;
+
+                    case 9:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr1);
+                        mMedia.start();
+                        break;
+
+                    case 10:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr2);
+                        mMedia.start();
+                        break;
+
+                    case 11:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr3);
+                        mMedia.start();
+                        break;
+
+                    case 12:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr4);
+                        mMedia.start();
+                        break;
+
+                    case 13:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr5);
+                        mMedia.start();
+                        break;
+                    case 14:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr6);
+                        mMedia.start();
+                        break;
+
+                    case 15:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr7);
+                        mMedia.start();
+                        break;
+                    case 16:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr8);
+                        mMedia.start();
+                        break;
+
+                    case 17:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr9);
+                        mMedia.start();
+                        break;
+
+                    case 18:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr10);
+                        mMedia.start();
+                        break;
+
+                    case 19:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr11);
+                        mMedia.start();
+                        break;
+
+                    case 20:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr12);
+                        mMedia.start();
+                        break;
+
+                    case 21:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr13);
+                        mMedia.start();
+                        break;
+
+                    case 22:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr14);
+                        mMedia.start();
+                        break;
+
+                    case 23:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr15);
+                        mMedia.start();
+                        break;
+                    case 24:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr16);
+                        mMedia.start();
+                        break;
+                    case 25:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr17);
+                        mMedia.start();
+                        break;
+                    case 26:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr18);
+                        mMedia.start();
+                        break;
+                    case 27:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr19);
+                        mMedia.start();
+                        break;
+
+                    case 28:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr20);
+                        mMedia.start();
+                        break;
+                    case 29:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr21);
+                        mMedia.start();
+                        break;
+                    case 30:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr22);
+                        mMedia.start();
+                        break;
+                    case 31:
+                        mMedia = MediaPlayer.create(Direction.this, R.raw.tr23);
+                        mMedia.start();
+                        break;
 
 
-    }
 
-    private void initData() {
+
+
+
+
+
+
+
+                }
+
+                return false;
+            }
+            });
+        }
+
+        private void initData() {
         listDataHeader = new ArrayList<>();
         listHash = new HashMap<>();
+
 
         listDataHeader.add("Go straight");
         listDataHeader.add("Turn left");
@@ -110,33 +274,33 @@ public class Direction extends AppCompatActivity  implements AdapterView.OnItemC
         List<String> di9 = new ArrayList<>();
         di9.add("Transcription:   sà-tăa-nee                  " + "              Thai word:  สถานี");
         List<String> di10 = new ArrayList<>();
-        di10.add("Transcription:  sà-tăa-nee-rót-fai-yòo-têe-năi          " + "                       Thai word:  สถานีรถไฟอยู่ที่ไหน");
+        di10.add("Transcription:  sà-tăa-nee-rót-fai-yòo-têe-năi          " + "                                           Thai word:  สถานีรถไฟอยู่ที่ไหน");
         List<String> di11 = new ArrayList<>();
         di11.add("Transcription:                                                  chăn-dtông-gaan-bpai-sà-tăa-nee-rót-fai                          " + "                                    Thai word:                                                              ฉันต้องการไปสถานีรถไฟ");
         List<String> di12 = new ArrayList<>();
-        di12.add("Transcription:  bpai-têe-nân-dâi-yàang-rai   " + "             Thai word:  ไปที่นั่นได้อย่างไร");
+        di12.add("Transcription:  bpai-têe-nân-dâi-yàang-rai   " + "                                                      Thai word:  ไปที่นั่นได้อย่างไร");
         List<String> di13 = new ArrayList<>();
         di13.add("Transcription:  kun-yòo-têe-năi               " + "            Thai word:  คุณอยู่ที่ไหน");
         List<String> di14 = new ArrayList<>();
         di14.add("Transcription:  chăn-yòo-têe                  " + "            Thai word:  ฉันอยู่ที่...");
         List<String> di15 = new ArrayList<>();
-        di15.add("Transcription:  têe-nêe-mee-chêu-wâa-à-rai    " + "            Thai word:  ที่นี่มีชื่อว่าอะไร");
+        di15.add("Transcription:  têe-nêe-mee-chêu-wâa-à-rai    " + "                                                     Thai word:  ที่นี่มีชื่อว่าอะไร");
         List<String> di16 = new ArrayList<>();
         di16.add("Transcription:                                                  bpâai-rót-bàt-têe-glâi-têe-sùt-yòo-têe-năi                       " + "                                     Thai word:                                                             ป้ายรถบัสที่ใกล้ที่สุดอยู่ที่ไหน");
         List<String> di17 = new ArrayList<>();
         di17.add("Transcription:                                                  sà-tăa-nee-rót-fai-têe-glâi-yòo-têe-năi                          " + "                                     Thai word:                                                             สถานีรถไฟที่ใกล้ที่สุดอยู่ที่ไหน");
         List<String> di18 = new ArrayList<>();
-        di18.add("Transcription:  sà-tăa-nee-née-chêu-wâa-à-rai  " + "           Thai word:  สถานีนี้ชื่อว่าอะไร");
+        di18.add("Transcription:  sà-tăa-nee-née-chêu-wâa-à-rai  " + "                                                     Thai word:  สถานีนี้มีชื่อว่าอะไร");
         List<String> di19 = new ArrayList<>();
-        di19.add("Transcription:  chăn-dtông-bplìan-rót-têe-năi  " + "           Thai word:  ฉันต้องเปลี่ยนรถที่ไหน");
+        di19.add("Transcription:  chăn-dtông-bplìan-rót-têe-năi  " + "                                                     Thai word:  ฉันต้องเปลี่ยนรถที่ไหน");
         List<String> di20 = new ArrayList<>();
-        di20.add("Transcription:  chái-way-laa-naan-tâo-rai      "  + "          Thai word:  ใช้เวลานานเท่าไร");
+        di20.add("Transcription:  chái-way-laa-naan-tâo-rai      "  + "                                                     Thai word:  ใช้เวลานานเท่าไร");
         List<String> di21 = new ArrayList<>();
         di21.add("Transcription:  bprà-maan                       " + "          Thai word:  ประมาณ...");
         List<String> di22 = new ArrayList<>();
         di22.add("Transcription:  séu-dtŭa-dâi-têe-năi           " + "           Thai word:  ซื้อตั๋วได้ที่ไหน");
         List<String> di23 = new ArrayList<>();
-        di23.add("Transcription:  chăn-yàak-séu-dtŭa-bpai        " + "           Thai word:  ฉันอยากซื้อตั๋วไป...");
+        di23.add("Transcription:  chăn-yàak-séu-dtŭa-bpai        " + "                                                      Thai word:  ฉันอยากซื้อตั๋วไป...");
         List<String> di24 = new ArrayList<>();
         di24.add("Transcription:  dtŭa-raa-kaa-tâo-rai           " + "           Thai word:  ตั๋วราคาเท่าไร");
         List<String> di25 = new ArrayList<>();
@@ -144,11 +308,11 @@ public class Direction extends AppCompatActivity  implements AdapterView.OnItemC
         List<String> di26 = new ArrayList<>();
         di26.add("Transcription:  rót-bàt-mee-ae-măi             " + "           Thai word:  รถบัสมีแอร์ไหม");
         List<String> di27 = new ArrayList<>();
-        di27.add("Transcription:  rót-bàt-mee-hông-náam-măi      " + "           Thai word:  รถบัสมีห้องน้ำไหม");
+        di27.add("Transcription:  rót-bàt-mee-hông-náam-măi      " + "                                                       Thai word:  รถบัสมีห้องน้ำไหม");
         List<String> di28 = new ArrayList<>();
-        di28.add("Transcription:  rót-fai-òk-dtor-gèe-mohng      " + "           Thai word:  รถไฟออกตอนกี่โมง");
+        di28.add("Transcription:  rót-fai-òk-dtor-gèe-mohng      " + "                                                       Thai word:  รถไฟออกตอนกี่โมง");
         List<String> di29 = new ArrayList<>();
-        di29.add("Transcription:  rót-fai-tĕun-ggèe-mohng        " + "           Thai word:  รถไฟถึงตอนกี่โมง");
+        di29.add("Transcription:  rót-fai-tĕun-ggèe-mohng        " + "                                                        Thai word:  รถไฟถึงตอนกี่โมง");
         List<String> di30 = new ArrayList<>();
         di30.add("Transcription:  jòt-têe-nêe                    " + "           Thai word:  จอดที่นี่");
         List<String> di31 = new ArrayList<>();
@@ -195,14 +359,9 @@ public class Direction extends AppCompatActivity  implements AdapterView.OnItemC
     }
 
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        final MediaPlayer player = MediaPlayer.create(this,R.raw.tr25);
-        listDataHeader = new ArrayList<>();
-        if (mMedia != null) {
-            mMedia.release();
-        }
-        mMedia.start();
+
+
+
 
     /*@Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -421,4 +580,4 @@ public class Direction extends AppCompatActivity  implements AdapterView.OnItemC
         });
         dialog.show();
     }*/
-    }}
+    }
