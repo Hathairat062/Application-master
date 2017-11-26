@@ -27,7 +27,7 @@ public class moreFragment extends Fragment {
         View rootView=inflater.inflate(R.layout.more_fragment,container,false);
 
         ListView lv= (ListView) rootView.findViewById(R.id.moreListView);
-        CustomAdapter adapter=new CustomAdapter(this.getActivity(),getmore());
+        CustomAdapter adapter=new CustomAdapter(this.getActivity(),getmore(),2);
 
         lv.setAdapter(adapter);
 

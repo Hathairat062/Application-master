@@ -29,9 +29,10 @@ public class learnFragment extends Fragment  {
 
         ListView lv = (ListView) rootView.findViewById(R.id.learnListView);
 
-        CustomAdapter adapter = new CustomAdapter(this.getActivity(), getlearning());
+        CustomAdapter adapter = new CustomAdapter(this.getActivity(), getlearning(), 2);
 
         lv.setAdapter(adapter);
+
 
         return rootView;
 

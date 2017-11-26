@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ff"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="projectandroid.coe.application.ResultActivity">
@@ -12,30 +13,26 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="RESULT"
-        android:textSize="20dp"
-        android:layout_marginTop="50dp" />
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="3/5"
-        android:textSize="30dp"
-        android:layout_marginTop="60dp" />
-    <TextView
-        android:id="@+id/totalScoreLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Totle score: 333"
-        android:textSize="20dp"
-        android:layout_marginTop="60dp" />
+        android:textSize="30dp" />
+
     <Button
+        android:id="@+id/back"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:text="Return"
-        android:textSize="18dp"
         android:layout_marginTop="80dp"
-        android:onClick="returnTop"/>
+        android:onClick="returnTop"
+        android:text="Return"
+        android:textSize="18dp" />
 
 
 </LinearLayout>

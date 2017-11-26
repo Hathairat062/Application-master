@@ -35,10 +35,12 @@ public class CustomAdapter extends BaseAdapter  {
     ArrayList<LearnShow> learnShows;
     LayoutInflater inflater;
     ListView listview;
+    int checkFragment;
 
-    public CustomAdapter(Context c, ArrayList<LearnShow> learnShows) {
+    public CustomAdapter(Context c, ArrayList<LearnShow> learnShows,int checkFragment) {
         this.c = c;
         this.learnShows = learnShows;
+        this.checkFragment = checkFragment;
     }
 
     @Override
@@ -86,36 +88,55 @@ public class CustomAdapter extends BaseAdapter  {
                 /*Toast.makeText(c, name, Toast.LENGTH_SHORT).show();*/
                 switch (position){
                     case 0:
-                        Intent intent1 = new Intent(c,Tnumber.class);
-                        c.startActivity(intent1);
-                        Intent intent = new Intent(c,Number.class);
-                        c.startActivity(intent);
+                        if(checkFragment==1) {
+                            Intent intent1 = new Intent(c, Tnumber.class);
+                            c.startActivity(intent1);
+                        }
+                        else {
+                            Intent intent = new Intent(c, Number.class);
+                            c.startActivity(intent);
+                        }
                         break;
                     case 1:
-                        Intent intent3 = new Intent(c, Ttimes.class);
-                        c.startActivity(intent3);
-                        Intent intent2 = new Intent(c,Times.class);
-                        c.startActivity(intent2);
+                        if(checkFragment==1) {
+                            Intent intent3 = new Intent(c, Ttimes.class);
+                            c.startActivity(intent3);
+                        }
+                        else {
+                            Intent intent2 = new Intent(c,Times.class);
+                            c.startActivity(intent2);
+                        }
                         break;
                     case 2:
-                        Intent intent5 = new Intent(c, Tgreet.class);
-                        c.startActivity(intent5);
-                        Intent intent4 = new Intent(c,Greet.class);
-                        c.startActivity(intent4);
+                        if(checkFragment==1) {
+                            Intent intent5 = new Intent(c, Tgreet.class);
+                            c.startActivity(intent5);
+                        }
+                        else {
+                            Intent intent4 = new Intent(c, Greet.class);
+                            c.startActivity(intent4);
+                        }
                         break;
                     case 3:
+                        if(checkFragment==1) {
                         Intent intent7 = new Intent(c,Tgeneral.class);
                         c.startActivity(intent7);
-                        Intent intent6 = new Intent(c,General.class);
-                        c.startActivity(intent6);
+                        }
+                        else {
+                            Intent intent6 = new Intent(c, General.class);
+                            c.startActivity(intent6);
+                        }
                         break;
                     case 4:
+                        if(checkFragment==1) {
                         Intent intent9 = new Intent(c,Tdirec.class);
                         c.startActivity(intent9);
-                        Intent intent8 = new Intent(c,Direction.class);
-                        c.startActivity(intent8);
+                        }
+                        else {
+                            Intent intent8 = new Intent(c, Direction.class);
+                            c.startActivity(intent8);
+                        }
                         break;
-
 
                 }
 

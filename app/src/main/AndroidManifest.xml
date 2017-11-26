@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,8 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        /*
-        <activity android:name=".SplashScreen" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Number" />
         <activity android:name=".Times" />
         <activity android:name=".Greet" />
@@ -31,7 +30,8 @@
         <activity android:name=".Tgreet" />
         <activity android:name=".Tgeneral" />
         <activity android:name=".Tdirec" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ResultActivity" />
+
     </application>
 
 </manifest>

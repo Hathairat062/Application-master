@@ -25,7 +25,7 @@ public class testFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.test_fragment, container, false);
 
         ListView lv = (ListView) rootView.findViewById(R.id.testListView);
-        CustomAdapter adapter = new CustomAdapter(this.getActivity(), gettest());
+        CustomAdapter adapter = new CustomAdapter(this.getActivity(), gettest(), 1);
 
         lv.setAdapter(adapter);
 
