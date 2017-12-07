@@ -6,10 +6,23 @@
     android:layout_height="match_parent"
     tools:context="projectandroid.coe.application.Times">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
     <ExpandableListView
         android:id="@+id/times"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar3"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
         />
 
 </RelativeLayout>

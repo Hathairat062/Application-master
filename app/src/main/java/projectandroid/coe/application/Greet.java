@@ -3,6 +3,7 @@ package projectandroid.coe.application;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ExpandableListView;
@@ -34,6 +35,11 @@ public class Greet extends AppCompatActivity {
         initData();
         listAdapter = new ExpandableListAdapter(this,listDataHeader,listHash);
         listView.setAdapter(listAdapter);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar10);
+        //setSupportActionBar(toolbar);
+        toolbar.setTitle("Greeting");
+
 
 
         //listView = (ListView) findViewById(R.id.greet);

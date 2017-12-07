@@ -8,7 +8,20 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:weightSum="1"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/toolbar7"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
     tools:context="projectandroid.coe.application.Tnumber">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <TextView
         android:id="@+id/countLabel"
@@ -37,63 +50,38 @@
 
     <Button
         android:id="@+id/answerBtn1"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
         android:layout_marginTop="30dp"
-        android:layout_weight="0.25"
-        android:background="?attr/listChoiceBackgroundIndicator"
-        android:backgroundTint="?android:attr/colorControlActivated"
-        android:onClick="checkAnswer"
         android:text="Answer1"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:onClick="checkAnswer"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/answerBtn2"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
-        android:layout_marginTop="6dp"
-        android:layout_weight="0.21"
-        android:background="?attr/listChoiceBackgroundIndicator"
-        android:backgroundTint="?android:attr/colorControlActivated"
-        android:onClick="checkAnswer"
         android:text="Answer2"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/answerBtn3"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
-        android:layout_marginTop="6dp"
-        android:layout_weight="0.20"
-        android:background="?attr/listChoiceBackgroundIndicator"
-        android:backgroundTint="?attr/colorControlActivated"
-        android:onClick="checkAnswer"
         android:text="Answer3"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/answerBtn4"
-        android:layout_width="390dp"
+        android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
-        android:layout_marginTop="6dp"
-        android:layout_weight="0.22"
-        android:background="?attr/listChoiceBackgroundIndicator"
-        android:backgroundTint="?attr/colorControlActivated"
-        android:onClick="checkAnswer"
         android:text="Answer4"
-        android:textColor="@color/colorAccent"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
         tools:ignore="HardcodedText" />
-
 
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -51,6 +52,9 @@ public class Ttimes extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ttimes);
 
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar9);
+        //setSupportActionBar(toolbar);
+        toolbar.setTitle("Times and Date");
 
         countLabel = (TextView) findViewById(R.id.countLabel);
         questionLabel = (TextView) findViewById(R.id.questionLabel);

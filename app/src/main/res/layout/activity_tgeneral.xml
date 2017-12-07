@@ -4,10 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ff"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:weightSum="1"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/toolbar8"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
     tools:context="projectandroid.coe.application.Tgeneral">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <TextView
         android:id="@+id/countLabel"

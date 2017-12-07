@@ -1,9 +1,11 @@
 package projectandroid.coe.application;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -34,6 +36,15 @@ public class ResultActivity extends AppCompatActivity  {
         //SharedPreferences.Editor editor = setting.edit();
         //editor.putInt("totalScore" , totalScore);
         //editor.commit();
+        back.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
+            }
+        });
+
+
 
 
         }
