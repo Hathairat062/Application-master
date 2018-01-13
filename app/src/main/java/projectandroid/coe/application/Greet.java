@@ -36,7 +36,7 @@ public class Greet extends AppCompatActivity {
         listAdapter = new ExpandableListAdapter(this,listDataHeader,listHash);
         listView.setAdapter(listAdapter);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar10);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar4);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Greeting");
 

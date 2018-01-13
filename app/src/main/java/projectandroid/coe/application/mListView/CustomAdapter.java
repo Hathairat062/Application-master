@@ -12,17 +12,27 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import projectandroid.coe.application.Accom;
 import projectandroid.coe.application.Direction;
+import projectandroid.coe.application.Emer;
 import projectandroid.coe.application.General;
 import projectandroid.coe.application.Greet;
 import projectandroid.coe.application.Number;
+import projectandroid.coe.application.Occa;
 import projectandroid.coe.application.R;
+import projectandroid.coe.application.Shop;
+import projectandroid.coe.application.Taccom;
 import projectandroid.coe.application.Tdirec;
+import projectandroid.coe.application.Temer;
 import projectandroid.coe.application.Tgeneral;
 import projectandroid.coe.application.Tgreet;
 import projectandroid.coe.application.Times;
 import projectandroid.coe.application.Tnumber;
+import projectandroid.coe.application.Tocca;
+import projectandroid.coe.application.Trans;
+import projectandroid.coe.application.Tshop;
 import projectandroid.coe.application.Ttimes;
+import projectandroid.coe.application.Ttrans;
 import projectandroid.coe.application.mData.LearnShow;
 
 /**
@@ -137,6 +147,57 @@ public class CustomAdapter extends BaseAdapter  {
                             c.startActivity(intent8);
                         }
                         break;
+                    case 5:
+                        if(checkFragment==1) {
+                            Intent intent11 = new Intent(c,Ttrans.class);
+                            c.startActivity(intent11);
+                        }
+                        else {
+                            Intent intent10 = new Intent(c, Trans.class);
+                            c.startActivity(intent10);
+                        }
+                        break;
+                    case 6:
+                        if(checkFragment==1) {
+                            Intent intent13 = new Intent(c,Taccom.class);
+                            c.startActivity(intent13);
+                        }
+                        else {
+                            Intent intent12 = new Intent(c, Accom.class);
+                            c.startActivity(intent12);
+                        }
+                        break;
+                    case 7:
+                        if(checkFragment==1) {
+                            Intent intent15 = new Intent(c,Temer.class);
+                            c.startActivity(intent15);
+                        }
+                        else {
+                            Intent intent14 = new Intent(c, Emer.class);
+                            c.startActivity(intent14);
+                        }
+                        break;
+                    case 8:
+                        if(checkFragment==1) {
+                            Intent intent17 = new Intent(c,Tshop.class);
+                            c.startActivity(intent17);
+                        }
+                        else {
+                            Intent intent16 = new Intent(c, Shop.class);
+                            c.startActivity(intent16);
+                        }
+                        break;
+                    case 9:
+                        if(checkFragment==1) {
+                            Intent intent19 = new Intent(c,Tocca.class);
+                            c.startActivity(intent19);
+                        }
+                        else {
+                            Intent intent18 = new Intent(c, Occa.class);
+                            c.startActivity(intent18);
+                        }
+                        break;
+
 
                 }
 
