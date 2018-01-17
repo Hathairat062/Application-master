@@ -228,7 +228,7 @@ public class Shop extends AppCompatActivity {
         List<String> tr8 = new ArrayList<>();
         tr8.add("Transcription: tŭng-táo                         " + "                 Thai word:  ถุงเท้า");
         List<String> tr9 = new ArrayList<>();
-        tr9.add("Transcription: rong táo                         " + "                 Thai word:  รองเท้า");
+        tr9.add("Transcription: rong-táo                         " + "                 Thai word:  รองเท้า");
         List<String> tr10 = new ArrayList<>();
         tr10.add("Transcription: wâen-gan-dàet                       " + "              Thai word:  แว่นกันแดด");
         List<String> tr11 = new ArrayList<>();

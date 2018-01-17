@@ -1,9 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/toolbar21"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
     tools:context="projectandroid.coe.application.Taccom">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q1"
+        android:textSize="22dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/questionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:id="@+id/answerBtn1"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:layout_marginTop="40dp"
+        android:text="Answer1"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/answerBtn2"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Answer2"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/answerBtn3"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Answer3"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/answerBtn4"
+        android:layout_width="@dimen/answerBtn_width"
+        android:layout_height="@dimen/answerBtn_height"
+        android:text="Answer4"
+        android:layout_marginTop="6dp"
+        android:onClick="checkAnswer"
+        tools:ignore="HardcodedText" />
+
+
+
+
+
+</LinearLayout>

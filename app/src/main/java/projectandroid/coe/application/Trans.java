@@ -339,7 +339,7 @@ public class Trans extends AppCompatActivity {
         List<String> tr30 = new ArrayList<>();
         tr30.add("Transcription:  kèe-jàk-grà-yaan               " + "                 Thai word:  ขี่จักรยาน");
         List<String> tr31 = new ArrayList<>();
-        tr31.add("Transcription:  rót jàk-grà-yaan-yon           " + "                 Thai word:  รถจักรยานยนต์");
+        tr31.add("Transcription:  rót-jàk-grà-yaan-yon           " + "                 Thai word:  รถจักรยานยนต์");
         List<String> tr32 = new ArrayList<>();
         tr32.add("Transcription:  rót-săam-lór-tèep              " + "                 Thai word:  รถสามล้อถีบ");
         List<String> tr33 = new ArrayList<>();

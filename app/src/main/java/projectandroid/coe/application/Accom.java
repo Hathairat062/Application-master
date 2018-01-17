@@ -187,7 +187,7 @@ public class Accom extends AppCompatActivity {
         listDataHeader.add("Are there rooms available?");
         listDataHeader.add("Can I have a look?");
         listDataHeader.add("Is internet included?");
-        listDataHeader.add("is breakfast included?");
+        listDataHeader.add("Is breakfast included?");
         listDataHeader.add("Is the hotel located near the center?");
         listDataHeader.add("็How can I get to the hotel?");
         listDataHeader.add("How much does the room cost?");

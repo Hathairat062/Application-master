@@ -174,7 +174,7 @@ public class Emer extends AppCompatActivity {
         listDataHeader.add("I lost my passport.");
         listDataHeader.add("I want to go to the embassy.");
         listDataHeader.add("I have some trouble.");
-        listDataHeader.add("็็I want a translator.");
+        listDataHeader.add("I want a translator.");
         listDataHeader.add("I want to go to the police office.");
         listDataHeader.add("I don't have money.");
         listDataHeader.add("Fire!");
