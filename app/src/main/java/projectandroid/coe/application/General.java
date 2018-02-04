@@ -2,6 +2,7 @@ package projectandroid.coe.application;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -42,6 +43,14 @@ public class General extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar5);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("General conversation");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+
 
 
         //listView = (ListView) findViewById(R.id.general);
@@ -196,6 +205,12 @@ public class General extends AppCompatActivity  {
                         mMedia.start();
                         break;
             }
+                mMedia.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    };
+                });
                 return false;
             }
         });

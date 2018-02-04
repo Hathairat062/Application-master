@@ -11,8 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".SplashScreen"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,27 +19,37 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Number" />
-        <activity android:name=".Times" />
-        <activity android:name=".Greet" />
-        <activity android:name=".General" />
-        <activity android:name=".Direction" />
+        <activity android:name=".Number"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Times"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Greet"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".General"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Direction"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Tnumber" />
         <activity android:name=".Ttimes" />
         <activity android:name=".Tgreet" />
         <activity android:name=".Tgeneral" />
         <activity android:name=".Tdirec" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".Accom" />
+        <activity android:name=".Accom"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Taccom" />
-        <activity android:name=".Trans" />
+        <activity android:name=".Trans"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Ttrans" />
-        <activity android:name=".Emer" />
+        <activity android:name=".Emer"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Temer" />
-        <activity android:name=".Shop" />
+        <activity android:name=".Shop"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Tshop" />
-        <activity android:name=".Occa" />
-        <activity android:name=".Tocca"></activity>
+        <activity android:name=".Occa"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Tocca"/>
     </application>
 
 </manifest>

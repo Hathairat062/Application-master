@@ -1,8 +1,9 @@
 package projectandroid.coe.application;
 
 import android.media.MediaPlayer;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -46,6 +47,14 @@ public class Shop extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar15);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Shopping");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+
 
 
         listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
@@ -173,6 +182,12 @@ public class Shop extends AppCompatActivity {
                         mMedia.start();
                         break;
                 }
+                mMedia.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    };
+                });
                 return false;
             }
         });
@@ -242,13 +257,13 @@ public class Shop extends AppCompatActivity {
         List<String> tr15 = new ArrayList<>();
         tr15.add("Transcription: hăe won                          " + "                 Thai word:  แหวน");
         List<String> tr16 = new ArrayList<>();
-        tr16.add("Transcription: sôi-kôr-meu/gam-lai-kôr-meu      " + "                 Thai word:  สร้อยข้อมือ/กำไลข้อมือ");
+        tr16.add("Transcription: sôi-kôr-meu/gam-lai-kôr-meu                    " + "                              Thai word:  สร้อยข้อมือ/กำไลข้อมือ");
         List<String> tr17 = new ArrayList<>();
         tr17.add("Transcription: dtàang-hŏo                       " + "                 Thai word:  ต่างหู");
         List<String> tr18 = new ArrayList<>();
-        tr18.add("Transcription: chăn-kŏng-long-sài-dâi-măi      " + "                 Thai word:  ฉันขอลองใส่ได้ไหม");
+        tr18.add("Transcription: chăn-kŏng-long-sài-dâi-măi                     " + "                               Thai word:  ฉันขอลองใส่ได้ไหม");
         List<String> tr19 = new ArrayList<>();
-        tr19.add("Transcription: hông-long-sêua-yòo-têe-năi      " + "                 Thai word:  ห้องลองเสื้ออยู่ที่ไหน");
+        tr19.add("Transcription: hông-long-sêua-yòo-têe-năi                     " + "                                Thai word:  ห้องลองเสื้ออยู่ที่ไหน");
         List<String> tr20 = new ArrayList<>();
         tr20.add("Transcription: kun-sài-sai-à-rai               " + "                 Thai word:  คุณใส่ไซส์อะไร");
         List<String> tr21 = new ArrayList<>();

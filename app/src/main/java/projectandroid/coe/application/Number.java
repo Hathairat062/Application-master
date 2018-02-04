@@ -2,6 +2,7 @@ package projectandroid.coe.application;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -32,6 +33,8 @@ public class Number extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number);
 
+
+
         listView = (ExpandableListView)findViewById(R.id.num);
         initData();
         listAdapter = new ExpandableListAdapter(this,listDataHeader,listHash);
@@ -39,8 +42,17 @@ public class Number extends AppCompatActivity  {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
         //setSupportActionBar(toolbar);
+
         toolbar.setTitle("Number");
 
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
 
         //listView = (ListView) findViewById(R.id.num);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings);
@@ -50,7 +62,7 @@ public class Number extends AppCompatActivity  {
         listView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-
+                System.out.print("groupPosition");
                 switch (groupPosition) {
                     case 0:
                         mMedia = MediaPlayer.create(Number.this, R.raw.n1);
@@ -216,11 +228,13 @@ public class Number extends AppCompatActivity  {
                         mMedia = MediaPlayer.create(Number.this, R.raw.n1m);
                         mMedia.start();
                         break;
-
-
-
-
                 }
+                mMedia.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    };
+                });
                 return false;
             }
         });

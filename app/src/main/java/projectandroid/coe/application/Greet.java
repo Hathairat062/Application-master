@@ -2,6 +2,7 @@ package projectandroid.coe.application;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -39,6 +40,15 @@ public class Greet extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar4);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Greeting");
+
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+
 
 
 
@@ -98,6 +108,12 @@ public class Greet extends AppCompatActivity {
                         break;
 
             }
+                mMedia.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    };
+                });
                 return false;
             }
         });

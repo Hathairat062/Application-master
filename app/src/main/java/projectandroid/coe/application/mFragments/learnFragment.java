@@ -69,7 +69,7 @@ public class learnFragment extends Fragment  {
         learnShow = new LearnShow("Shopping", R.drawable.shop);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Occasion Phrases", R.drawable.occa);
+        learnShow = new LearnShow("Weather", R.drawable.occa);
         learn.add(learnShow);
 
         return learn;

@@ -2,6 +2,7 @@ package projectandroid.coe.application;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -38,6 +39,14 @@ public class Times extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar3);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Times and Date");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+
 
 
         //listView = (ListView) findViewById(R.id.times);
@@ -221,6 +230,12 @@ public class Times extends AppCompatActivity  {
 
 
                 }
+                mMedia.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+
+                    };
+                });
 
                     return false;
             }
@@ -337,7 +352,6 @@ public class Times extends AppCompatActivity  {
         Minute.add("Transcription:  naa-tee                            " + "             Thai word:  นาที");
         List<String> Second = new ArrayList<>();
         Second.add("Transcription:  wí-naa-tee                         " + "             Thai word:  วินาที");
-
         List<String> What1 = new ArrayList<>();
         What1.add("Transcription:  gèe-mohng-láew                         " + "             Thai word:  กี่โมงแล้ว");
         List<String> What2 = new ArrayList<>();
