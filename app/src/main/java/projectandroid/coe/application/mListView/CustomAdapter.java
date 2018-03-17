@@ -17,6 +17,7 @@ import projectandroid.coe.application.Direction;
 import projectandroid.coe.application.Emer;
 import projectandroid.coe.application.General;
 import projectandroid.coe.application.Greet;
+import projectandroid.coe.application.Mone;
 import projectandroid.coe.application.Number;
 import projectandroid.coe.application.Occa;
 import projectandroid.coe.application.R;
@@ -102,8 +103,12 @@ public class CustomAdapter extends BaseAdapter  {
                             Intent intent1 = new Intent(c, Tnumber.class);
                             c.startActivity(intent1);
                         }
-                        else {
+                        else if(checkFragment==2){
                             Intent intent = new Intent(c, Number.class);
+                            c.startActivity(intent);
+                        }
+                        else {
+                            Intent intent = new Intent(c, Mone.class);
                             c.startActivity(intent);
                         }
                         break;

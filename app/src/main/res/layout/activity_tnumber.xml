@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ff"
-    android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:weightSum="1"
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
     android:layout_below="@+id/toolbar7"
+    android:background="@drawable/pink3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
     app:popupTheme="@style/AppTheme.PopupOverlay"
     tools:context="projectandroid.coe.application.Tnumber">
 
@@ -27,12 +27,10 @@
         android:id="@+id/countLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:text="Q1"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
         android:textSize="22dp"
-        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
         tools:ignore="HardcodedText,SpUsage" />
 
     <TextView
@@ -44,7 +42,7 @@
         android:text="Question"
         android:textAlignment="center"
         android:textColor="?attr/actionModeSplitBackground"
-        android:textSize="36sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText,SpUsage" />
 
@@ -53,35 +51,60 @@
         android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
         android:layout_marginTop="30dp"
-        android:text="Answer1"
+        android:background="?android:attr/editTextBackground"
         android:onClick="checkAnswer"
+        android:text="Answer1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/answerBtn2"
         android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
-        android:text="Answer2"
         android:layout_marginTop="6dp"
+        android:background="?android:attr/editTextBackground"
         android:onClick="checkAnswer"
+        android:text="Answer2"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/answerBtn3"
         android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
-        android:text="Answer3"
         android:layout_marginTop="6dp"
+        android:background="?android:attr/editTextBackground"
         android:onClick="checkAnswer"
+        android:text="Answer3"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/answerBtn4"
         android:layout_width="@dimen/answerBtn_width"
         android:layout_height="@dimen/answerBtn_height"
-        android:text="Answer4"
         android:layout_marginTop="6dp"
+        android:background="?android:attr/editTextBackground"
         android:onClick="checkAnswer"
+        android:text="Answer4"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="?android:attr/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
         tools:ignore="HardcodedText" />
+
 
 </LinearLayout>

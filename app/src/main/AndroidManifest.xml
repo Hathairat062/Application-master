@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -19,37 +18,58 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Number"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Times"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Greet"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".General"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Direction"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Tnumber" />
-        <activity android:name=".Ttimes" />
-        <activity android:name=".Tgreet" />
-        <activity android:name=".Tgeneral" />
-        <activity android:name=".Tdirec" />
+        <activity
+            android:name=".Number"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Times"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Greet"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".General"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Direction"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tnumber"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Ttimes"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Taccom"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tgreet"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tgeneral"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tdirec"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".Accom"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Taccom" />
-        <activity android:name=".Trans"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Accom"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".Trans"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Ttrans" />
-        <activity android:name=".Emer"
-            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".Emer"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Temer" />
-        <activity android:name=".Shop"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Tshop" />
-        <activity android:name=".Occa"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Tocca"/>
+        <activity
+            android:name=".Shop"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tshop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Occa"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tocca"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Mone" />
+        <activity android:name=".Result2"></activity>
     </application>
 
 </manifest>

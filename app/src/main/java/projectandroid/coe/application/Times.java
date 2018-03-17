@@ -297,7 +297,7 @@ public class Times extends AppCompatActivity  {
         List<String> Wednesday = new ArrayList<>();
         Wednesday.add("Transcription:  wan-pút                  " + "                      Thai word:  วันพุธ");
         List<String> Thursday = new ArrayList<>();
-        Thursday.add("Transcription:  wan-pá-réu-hàt-sà-bor-dee       " + "                    Thai word:  วันพฤหัสบดี");
+        Thursday.add("Transcription:  wan-pá-réu-hàt-sà-bor-dee                  " + "                                        Thai word:  วันพฤหัสบดี");
         List<String> Friday = new ArrayList<>();
         Friday.add("Transcription:  wan-sùk                     " + "                      Thai word:  วันศุกร์");
         List<String> Saturday = new ArrayList<>();
@@ -309,7 +309,7 @@ public class Times extends AppCompatActivity  {
         List<String> Weekend = new ArrayList<>();
         Weekend.add("Transcription:  wan-săo-aa-tít             " + "                      Thai word:  วันเสาร์-อาทิตย์");
         List<String> January = new ArrayList<>();
-        January.add("Transcription:  deuan-mók-gà-raa-kom         " + "                      Thai word: เดือนมกราคม");
+        January.add("Transcription:  deuan-mók-gà-raa-kom                         " + "                                        Thai word: เดือนมกราคม");
         List<String> February = new ArrayList<>();
         February.add("Transcription:  deuan-gum-paa-pan            " + "                   Thai word:  เดือนกุมภาพันธ์");
         List<String> March = new ArrayList<>();
@@ -317,11 +317,11 @@ public class Times extends AppCompatActivity  {
         List<String> April = new ArrayList<>();
         April.add("Transcription:  deuan-may-săa-yon            " + "                     Thai word:  เดือนเมษายน");
         List<String> May = new ArrayList<>();
-        May.add("Transcription:  deuan-préut-sà-paa-kom          " + "                     Thai word:  เดือนพฤษภาคม");
+        May.add("Transcription:  deuan-préut-sà-paa-kom                            " + "                                        Thai word:  เดือนพฤษภาคม");
         List<String> June = new ArrayList<>();
         June.add("Transcription:  deuan-mí-tù-naa-yon            " + "                     Thai word:  เดือนมิถุนายน");
         List<String> July = new ArrayList<>();
-        July.add("Transcription:  deuan-gà-rá-gà-daa-kom         " + "                     Thai word:  เดือนกรกฎาคม");
+        July.add("Transcription:  deuan-gà-rá-gà-daa-kom                           " + "                                        Thai word:  เดือนกรกฎาคม");
         List<String> August = new ArrayList<>();
         August.add("Transcription:  deuan-sĭng-hăa-kom           " + "                     Thai word:  เดือนสิงหาคม");
         List<String> September = new ArrayList<>();
@@ -329,7 +329,7 @@ public class Times extends AppCompatActivity  {
         List<String> October = new ArrayList<>();
         October.add("Transcription:  deuan-dtù-laa-kom           " + "                    Thai word:  เดือนตุลาคม");
         List<String> November = new ArrayList<>();
-        November.add("Transcription:  deuan-préut-sà-jì-gaa-yon         " + "             Thai word:  เดือนพฤศจิกายน");
+        November.add("Transcription:  deuan-préut-sà-jì-gaa-yon                     " + "                                        Thai word:  เดือนพฤศจิกายน");
         List<String> December = new ArrayList<>();
         December.add("Transcription:  deuan-tan-waa-kom                 " + "             Thai word:  เดือนธันวาคม");
         List<String> Morning = new ArrayList<>();

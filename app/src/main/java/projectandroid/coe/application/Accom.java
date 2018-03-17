@@ -228,13 +228,13 @@ public class Accom extends AppCompatActivity {
         List<String> ac2 = new ArrayList<>();
         ac2.add("Transcription:  chăn-dtông-gaan-jong-hông-pák                   " + "              Thai word:  ฉันต้องการจองห้องพัก");
         List<String> ac3 = new ArrayList<>();
-        ac3.add("Transcription:  mee-hông-wâang-rĕu-mâi                  " + "              Thai word:  มีห้องว่างหรือไม่");
+        ac3.add("Transcription:  mee-hông-wâang-rĕu-mâi                            " + "                                 Thai word:  มีห้องว่างหรือไม่");
         List<String> ac4 = new ArrayList<>();
         ac4.add("Transcription:  chăn-kŏr-doo-nòi-dâi-rĕu-mâi                         " + "              Thai word:  ฉันขอดูหน่อยได้หรือไม่");
         List<String> ac5 = new ArrayList<>();
         ac5.add("Transcription:  ruam-in-têr-nét-măi                         " + "              Thai word:  รวมอินเทอร์เน็ตไหม");
         List<String> ac6 = new ArrayList<>();
-        ac6.add("Transcription:  ruam-aa-hăan-cháo-măi                     " + "              Thai word:  รวมอาหารเช้าไหม");
+        ac6.add("Transcription:  ruam-aa-hăan-cháo-măi                                " + "                              Thai word:  รวมอาหารเช้าไหม");
         List<String> ac7 = new ArrayList<>();
         ac7.add("Transcription:  rohng-raem-yòo-glâi-nai-meuang-măi                " + "              Thai word:  โรงแรมอยู่ใกล้ในเมืองไหม");
         List<String> ac8 = new ArrayList<>();
@@ -254,7 +254,7 @@ public class Accom extends AppCompatActivity {
         List<String> ac15 = new ArrayList<>();
         ac15.add("Transcription:  chăn-jà-òk-dtor                  " + "                 Thai word:  ฉันจะออกตอน...");
         List<String> ac16 = new ArrayList<>();
-        ac16.add("Transcription:  chăn-leum-gun-jae-hông           " + "                 Thai word:  ฉันลืมกุญแจห้อง");
+        ac16.add("Transcription:  chăn-leum-gun-jae-hông                          " + "                                         Thai word:  ฉันลืมกุญแจห้อง");
         List<String> ac17 = new ArrayList<>();
         ac17.add("Transcription:                                                 fàak-grà-bpăo-dern-taang-wái-têe-nêe-dâi-măi                          " + "                                     Thai word:                                                             ฝากกระเป๋าเดินทางไว้ที่นี่ได้ไหม");
         List<String> ac18 = new ArrayList<>();
@@ -262,7 +262,7 @@ public class Accom extends AppCompatActivity {
         List<String> ac19 = new ArrayList<>();
         ac19.add("Transcription:  mee-dtiang-non-săm-ràp-dèk-măi                             " + "                 Thai word:  มีเตียงนอนสำหรับเด็กไหม");
         List<String> ac20 = new ArrayList<>();
-        ac20.add("Transcription:  chăn-yàak-jong-hông-dìeow      " + "                 Thai word:  ฉันอยากจองห้องเดี่ยว");
+        ac20.add("Transcription:  chăn-yàak-jong-hông-dìeow                 " + "                                   Thai word:  ฉันอยากจองห้องเดี่ยว");
         List<String> ac21 = new ArrayList<>();
         ac21.add("Transcription:                                                  kun-sèrf-aa-hăan-têe-hông-săam-sŏon-hâa-dâi-măi                      " + "                                     Thai word:                                                            คุณเสิร์ฟอาหารที่ห้อง 305 ได้ไหม");
         List<String> ac22 = new ArrayList<>();
@@ -270,7 +270,7 @@ public class Accom extends AppCompatActivity {
         List<String> ac23 = new ArrayList<>();
         ac23.add("Transcription:  chăn-kŏr-jong-hông             " + "           Thai word:  ฉันขอจองห้อง");
         List<String> ac24 = new ArrayList<>();
-        ac24.add("Transcription:  chăn-yók-lêrk-gaan-jong-hông      " + "                 Thai word:  ฉันยกเลิกการจองห้อง");
+        ac24.add("Transcription:  chăn-yók-lêrk-gaan-jong-hông                                  " + "                               Thai word:  ฉันยกเลิกการจองห้อง");
 
 
         listHash.put(listDataHeader.get(0), ac1);

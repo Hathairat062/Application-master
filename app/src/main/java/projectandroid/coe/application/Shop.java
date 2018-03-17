@@ -265,19 +265,19 @@ public class Shop extends AppCompatActivity {
         List<String> tr19 = new ArrayList<>();
         tr19.add("Transcription: hông-long-sêua-yòo-têe-năi                     " + "                                Thai word:  ห้องลองเสื้ออยู่ที่ไหน");
         List<String> tr20 = new ArrayList<>();
-        tr20.add("Transcription: kun-sài-sai-à-rai               " + "                 Thai word:  คุณใส่ไซส์อะไร");
+        tr20.add("Transcription: kun-sài-sai-à-rai                                 " + "                                     Thai word:  คุณใส่ไซส์อะไร");
         List<String> tr21 = new ArrayList<>();
         tr21.add("Transcription: chăn-sài-sai                    " + "                 Thai word:  ฉันใส่ไซส์...");
         List<String> tr22 = new ArrayList<>();
         tr22.add("Transcription: chăn-yàak-jà-long-sài          " + "                 Thai word:  ฉันอยากจะลองใส่");
         List<String> tr23 = new ArrayList<>();
-        tr23.add("Transcription: chăn-mee-sai-èun-măi           " + "                 Thai word:  คุณมีไซส์อื่นไหม");
+        tr23.add("Transcription: chăn-mee-sai-èun-măi                             " + "                                   Thai word:  คุณมีไซส์อื่นไหม");
         List<String> tr24 = new ArrayList<>();
         tr24.add("Transcription: chăn-jà-séu-an-née              " + "                 Thai word:  ฉันจะซื้ออันนี้");
         List<String> tr25 = new ArrayList<>();
         tr25.add("Transcription: raa-kaa-tâo-rai                 " + "                 Thai word:  ราคาเท่าไร");
         List<String> tr26 = new ArrayList<>();
-        tr26.add("Transcription: kun-ráp-bàt-kray-dìt-măi        " + "                 Thai word:  คุณรับบัตรเครดิตไหม");
+        tr26.add("Transcription: kun-ráp-bàt-kray-dìt-măi                        " + "                                         Thai word:  คุณรับบัตรเครดิตไหม");
 
 
 

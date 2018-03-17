@@ -13,6 +13,7 @@ import android.view.View;
 
 import projectandroid.coe.application.mFragments.MyPagerAdapter;
 import projectandroid.coe.application.mFragments.learnFragment;
+import projectandroid.coe.application.mFragments.moreFragment;
 import projectandroid.coe.application.mFragments.testFragment;
 
 public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener{
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         MyPagerAdapter pagerAdapter=new MyPagerAdapter(this.getSupportFragmentManager());
         pagerAdapter.addFragment(new learnFragment());
         pagerAdapter.addFragment(new testFragment());
-        /*pagerAdapter.addFragment(new moreFragment());*/
+        pagerAdapter.addFragment(new moreFragment());
 
         //set adapter to vp
         vp.setAdapter(pagerAdapter);

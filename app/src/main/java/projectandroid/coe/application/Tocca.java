@@ -3,6 +3,7 @@ package projectandroid.coe.application;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -35,10 +36,10 @@ public class Tocca extends AppCompatActivity {
             {"  aa-gàat-bpen-yàang-rai-bâang                 " + "                อากาศเป็นอย่างไรบ้าง", "How is the weather?", "What's the temperature?", "There's a storm coming", "It look like it will rain soon."},
             {"  fŏn-dtòk/fŏn-gam-lang-dtòk                  " + "                 ฝนตก/ฝนกำลังตก", "It's raining.", "It's sunny.", "It's snowing.", "It's stormy."},
             {"  dàet-òk                                     " + "                 แดดออก", "It's sunny.", "It's snowing.", "It's cloudy.", "It's raining.",},
-            {"  hì-má-dtòk/hì-má-gam-lang-dtòk              " + "                หิมะตก/หิมะกำลังตก", "It's snowing.", "It's foggy.", "It's nice day.", "It's stormy."},
+            {"  hì-má-dtòk/hì-má-gam-lang-dtòk                             " + "                                   หิมะตก/หิมะกำลังตก", "It's snowing.", "It's foggy.", "It's nice day.", "It's stormy."},
             {"  mee-paa-yú                                  " + "                 มีพายุ", "It's stormy.", "It is hot.", "It's cloudy.", "It's raining."},
             {"  mee-mòk/mòk-long                            "  + "                มีหมอก/หมอกลง", "It's foggy.", "It's snowing.", "It is hot.", "It's nice day."},
-            {"  bpòk-klum-dûay-mâyk/eum-kreum               " + "                 ปกคลุมด้วยเมฆ/อึมครึม", "It's cloudy.", "It's snowing.", "It's sunny.", "It is hot."},
+            {"  bpòk-klum-dûay-mâyk/eum-kreum                              " + "                                    ปกคลุมด้วยเมฆ/อึมครึม", "It's cloudy.", "It's snowing.", "It's sunny.", "It is hot."},
             {"  aa-gàat-dee/tóng-fáa-jàem-săi               " + "                 อากาศดี/ท้องฟ้าแจ่มใส", "It's nice day.", "It's bad weather.", "It's freezing cold", "It's sunny."},
             {"  paa-yú-gam-lang-jà-kâo                      " + "                 พายุกำลังจะเข้า", "There's a storm coming", "It look like it will rain soon.", "It's warm outside.", "It's nice day."},
             {"  aa-gàat-mâi-dee                             " + "                 อากาศไม่ดี", "It's bad weather.", "It's sunny.", "It's warm outside.", "It's snowing."}
@@ -54,6 +55,14 @@ public class Tocca extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar25);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Weather");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+
 
         countLabel = (TextView) findViewById(R.id.countLabel);
         questionLabel = (TextView) findViewById(R.id.questionLabel);

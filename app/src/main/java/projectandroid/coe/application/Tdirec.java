@@ -3,6 +3,7 @@ package projectandroid.coe.application;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -35,7 +36,7 @@ public class Tdirec extends AppCompatActivity {
     String quizData[][] = {
             //{"number", "right answer", "choice1", choice2", "choice3"}
             {"  dtrong-bpai                 " + "                ตรงไป", "Go straight", "Turn left", "Turn right", "Get off"},
-            {"  líeow-sáai                   " + "               เลี้ยวซ้าย", "Turn left", "Go straight", "Turn right", "Direction"},
+            {"  líeow-sáai                     " + "                เลี้ยวซ้าย", "Turn left", "Go straight", "Turn right", "Direction"},
             {"  têe-nêe-mee-chêu-wâa-à-rai    " + "              ที่นี่มีชื่อว่าอะไร", "What is the name of this place?", "Where is the nearest bus stop?", "What is the name of this station?", "Where can I buy a ticket?",},
             {"  chăn-dtông-bplìan-rót-têe-năi  " + "             ฉันต้องเปลี่ยนรถที่ไหน", "Where should I transfer?", "What is the name of this place?", "What is the name of this station?", "How much is this ticket?"},
             {"  chăn-yàak-séu-dtŭa-bpai        " + "             ฉันอยากซื้อตั๋วไป...", "I want to buy a ticket to...", "The ticket costs...baht.", "How long does it take?", "When does the train leave?"},
@@ -57,6 +58,13 @@ public class Tdirec extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar11);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Direction and Place");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
 
         countLabel = (TextView) findViewById(R.id.countLabel);
         questionLabel = (TextView) findViewById(R.id.questionLabel);

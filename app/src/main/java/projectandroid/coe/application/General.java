@@ -259,9 +259,9 @@ public class General extends AppCompatActivity  {
         List<String> ge1 = new ArrayList<>();
         ge1.add("Transcription:  sà-wàt-dee                    " + "                 Thai word:  สวัสดี");
         List<String> ge2 = new ArrayList<>();
-        ge2.add("Transcription:  sà-wàt-dee-dton-cháo          " + "                 Thai word:  สวัสดีตอนเช้า");
+        ge2.add("Transcription:  sà-wàt-dee-dton-cháo                    " + "                                                    Thai word:  สวัสดีตอนเช้า");
         List<String> ge3= new ArrayList<>();
-        ge3.add("Transcription:  sà-wàt-dee-dton-bàai          " + "                 Thai word:  สวัสดีตอนบ่าย");
+        ge3.add("Transcription:  sà-wàt-dee-dton-bàai                    " + "                                                    Thai word:  สวัสดีตอนบ่าย");
         List<String> ge4 = new ArrayList<>();
         ge4.add("Transcription:  sà-wàt-dee-dton-yen           " + "                 Thai word:  สวัสดีตอนเย็น");
         List<String> ge5 = new ArrayList<>();

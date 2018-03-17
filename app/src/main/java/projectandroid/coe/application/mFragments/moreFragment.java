@@ -27,7 +27,7 @@ public class moreFragment extends Fragment {
         View rootView=inflater.inflate(R.layout.more_fragment,container,false);
 
         ListView lv= (ListView) rootView.findViewById(R.id.moreListView);
-        CustomAdapter adapter=new CustomAdapter(this.getActivity(),getmore(),2);
+        CustomAdapter adapter=new CustomAdapter(this.getActivity(),getmore(),3);
 
         lv.setAdapter(adapter);
 
@@ -37,7 +37,7 @@ public class moreFragment extends Fragment {
     private ArrayList<LearnShow> getmore() {
         ArrayList<LearnShow> learn = new ArrayList<>();
 
-        LearnShow learnShow = new LearnShow("Number", R.drawable.num);
+        LearnShow learnShow = new LearnShow("Similar pronunciation", R.drawable.num);
 
         learn.add(learnShow);
 
@@ -47,26 +47,6 @@ public class moreFragment extends Fragment {
         learnShow = new LearnShow("Greeting", R.drawable.greet);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("General Conversation", R.drawable.c);
-        learn.add(learnShow);
-
-        learnShow = new LearnShow("Direction and Place", R.drawable.direc);
-        learn.add(learnShow);
-
-        learnShow = new LearnShow("Transportation", R.drawable.places);
-        learn.add(learnShow);
-
-        learnShow = new LearnShow("Accommodation", R.drawable.accom);
-        learn.add(learnShow);
-
-        learnShow = new LearnShow("Emergency", R.drawable.emer);
-        learn.add(learnShow);
-
-        learnShow = new LearnShow("Shopping", R.drawable.shop);
-        learn.add(learnShow);
-
-        learnShow = new LearnShow("Occasion Phrases", R.drawable.occa);
-        learn.add(learnShow);
 
         return learn;
     }

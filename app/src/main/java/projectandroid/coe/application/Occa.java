@@ -214,7 +214,7 @@ public class Occa extends AppCompatActivity {
         List<String> tr7 = new ArrayList<>();
         tr7.add("Transcription: bpòk-klum-dûay-mâyk/eum-kreum               " + "                 Thai word: ปกคลุมด้วยเมฆ/อึมครึม");
         List<String> tr8 = new ArrayList<>();
-        tr8.add("Transcription: aa-gàat-dee/tóng-fáa-jàem-săi               " + "                 Thai word: อากาศดี/ท้องฟ้าแจ่มใส");
+        tr8.add("Transcription: aa-gàat-dee/tóng-fáa-jàem-săi               " + "                                     Thai word: อากาศดี/ท้องฟ้าแจ่มใส");
         List<String> tr9 = new ArrayList<>();
         tr9.add("Transcription: paa-yú-gam-lang-jà-kâo                       " + "                                      Thai word: พายุกำลังจะเข้า");
         List<String> tr10 = new ArrayList<>();

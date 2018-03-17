@@ -294,13 +294,13 @@ public class Trans extends AppCompatActivity {
 
 
         List<String> tr1 = new ArrayList<>();
-        tr1.add("Transcription:                                sà-tăa-nee-rót-fai-sà-tăa-nee-rót-bprà-jam-taang                    " + "                 Thai word:  สถานีรถไฟ/สถานีรถประจำทาง");
+        tr1.add("Transcription:                                        sà-tăa-nee-rót-fai-sà-tăa-nee-rót-bprà-jam-taang                    " + "                 Thai word:  สถานีรถไฟ/สถานีรถประจำทาง");
         List<String> tr2 = new ArrayList<>();
         tr2.add("Transcription:  kon-kàp-rót          " + "                 Thai word:  คนขับรถ");
         List<String> tr3= new ArrayList<>();
         tr3.add("Transcription:  sà-tăa-nee-kŏn-sòng          " + "                 Thai word:  สถานีขนส่ง");
         List<String> tr4 = new ArrayList<>();
-        tr4.add("Transcription:  sà-tăa-nee-dtòr-bpai-keu           " + "                 Thai word:   สถานีต่อไปคือ…");
+        tr4.add("Transcription:  sà-tăa-nee-dtòr-bpai-keu                      " + "                                           Thai word:   สถานีต่อไปคือ…");
         List<String> tr5 = new ArrayList<>();
         tr5.add("Transcription:  kŏn-sòng-muan-chon              " + "                 Thai word:  ขนส่งมวลชน");
         List<String> tr6 = new ArrayList<>();
@@ -308,7 +308,7 @@ public class Trans extends AppCompatActivity {
         List<String> tr7 = new ArrayList<>();
         tr7.add("Transcription:  dùan-pí-sàyt                   " + "                 Thai word:  ด่วนพิเศษ");
         List<String> tr8 = new ArrayList<>();
-        tr8.add("Transcription:  rót-fai-kwaam-reo-sŏong        " + "                 Thai word:  รถไฟความเร็วสูง");
+        tr8.add("Transcription:  rót-fai-kwaam-reo-sŏong                  " + "                                                  Thai word:  รถไฟความเร็วสูง");
         List<String> tr9 = new ArrayList<>();
         tr9.add("Transcription:  taang-lŭang                       " + "                 Thai word:  ทางหลวง");
         List<String> tr10 = new ArrayList<>();
@@ -316,23 +316,23 @@ public class Trans extends AppCompatActivity {
         List<String> tr11 = new ArrayList<>();
         tr11.add("Transcription:  doi-săan                       " + "                 Thai word:  โดยสาร…");
         List<String> tr12 = new ArrayList<>();
-        tr12.add("Transcription:                             kêun-rót-bprà-jam-taang-rĕu-doi-săan-rót-bprà-jam-taang                   " + "                 Thai word:  ขึ้นรถประทาง หรือ โดยสารรถประจำทาง");
+        tr12.add("Transcription:                                                        kêun-rót-bprà-jam-taang-rĕu-doi-săan-rót-bprà-jam-taang                   " + "                 Thai word:  ขึ้นรถประทาง หรือ โดยสารรถประจำทาง");
         List<String> tr13 = new ArrayList<>();
         tr13.add("Transcription:  bpâai-rót-may                   " + "             Thai word: ป้ายรถเมล์");
         List<String> tr14 = new ArrayList<>();
-        tr14.add("Transcription:  rót-bprà-jam-taang-săai         " + "             Thai word:  รถประจำทางสาย…");
+        tr14.add("Transcription:  rót-bprà-jam-taang-săai                                   " + "                                              Thai word:  รถประจำทางสาย…");
         List<String> tr15 = new ArrayList<>();
         tr15.add("Transcription:  bpâai-tàt-bpai                  " + "             Thai word:  ป้ายถัดไป");
         List<String> tr16 = new ArrayList<>();
-        tr16.add("Transcription:                             chăn-dtông-bplìan-rót-bprà-jam-taang-têe-bpâai-nâa                        " + "                 Thai word:  ฉันต้องเปลี่ยนรถประจำทางที่ป้ายหน้า");
+        tr16.add("Transcription:                                                        chăn-dtông-bplìan-rót-bprà-jam-taang-têe-bpâai-nâa                        " + "                 Thai word:  ฉันต้องเปลี่ยนรถประจำทางที่ป้ายหน้า");
         List<String> tr17 = new ArrayList<>();
         tr17.add("Transcription:  gaan-jà-raa-jon                    " + "                 Thai word:  การจราจร");
         List<String> tr18 = new ArrayList<>();
-        tr18.add("Transcription:  krêuang-măai-jà-raa-jon     " + "                 Thai word:  เครื่องหมายจราจร");
+        tr18.add("Transcription:  krêuang-măai-jà-raa-jon                         " + "                                           Thai word:  เครื่องหมายจราจร");
         List<String> tr19 = new ArrayList<>();
-        tr19.add("Transcription:  săn-yaan-fai-jà-raa-jon     " + "                 Thai word:  สัญญาณไฟจราจร");
+        tr19.add("Transcription:  săn-yaan-fai-jà-raa-jon                         " + "                                           Thai word:  สัญญาณไฟจราจร");
         List<String> tr20 = new ArrayList<>();
-        tr20.add("Transcription:                              gaan-jà-raa-jon-dtìt-kàt/rót-dtìt                                        " + "                 Thai word:  การจราจรติดขัด/รถติด");
+        tr20.add("Transcription:                                        gaan-jà-raa-jon-dtìt-kàt/rót-dtìt                                        " + "                 Thai word:  การจราจรติดขัด/รถติด");
         List<String> tr21 = new ArrayList<>();
         tr21.add("Transcription:                               nâng-reua-kâam-fâak/doi-săan-reua-kâam-fâak                             " + "                 Thai word:  นั่งเรือข้ามฟาก/โดยสารเรือข้ามฟาก");
         List<String> tr22 = new ArrayList<>();

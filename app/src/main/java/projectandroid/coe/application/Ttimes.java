@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -55,6 +56,13 @@ public class Ttimes extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar9);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Times and Date");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
 
         countLabel = (TextView) findViewById(R.id.countLabel);
         questionLabel = (TextView) findViewById(R.id.questionLabel);

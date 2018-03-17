@@ -3,6 +3,7 @@ package projectandroid.coe.application;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -35,7 +36,7 @@ public class Ttrans extends AppCompatActivity {
             {"  kŏn-sòng-muan-chon                 " + "                ขนส่งมวลชน", "mass transit", "bus terminals", "special express", "express way"},
             {"  rót-fai-dtâi-din                   " + "               รถไฟใต้ดิน", "underground/subway", "sky/electric train", "truck/lorry", "tricycle"},
             {"  taang-dùan                         " + "              ทางด่วน", "express way", "highway", "pedestrian bridge", "footpath/pavement",},
-            {"  gaan-jà-raa-jon-dtìt-kàt/rót-dtìt  " + "             การจราจรติดขัด/รถติด", "traffic jam", "traffic sign", "bus No.", "all the way"},
+            {"  gaan-jà-raa-jon-dtìt-kàt/rót-dtìt           " + "                                         การจราจรติดขัด/รถติด", "traffic jam", "traffic sign", "bus No.", "all the way"},
             {"  rót-jàk-grà-yaan-yon               " + "             รถจักรยานยนต์", "motorcycle/motorbike", "bicycle/bike", "tricycle", "truck/lorry"},
             {"  rót-fai-kwaam-reo-sŏong            "  + "            รถไฟความเร็วสูง", "high-speed train/high-speed rail", "sky/electric train", "underground/subway", "Train station/bus station"},
             {"  sà-năam-bin                        " + "             สนามบิน", "airport", "pedestrian bridge", "bus stop", "sky/electric train"},
@@ -54,6 +55,13 @@ public class Ttrans extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar20);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Transportation");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
 
         countLabel = (TextView) findViewById(R.id.countLabel);
         questionLabel = (TextView) findViewById(R.id.questionLabel);
