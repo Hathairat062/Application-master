@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-public class Mtwo extends AppCompatActivity {
+public class Mtree extends AppCompatActivity {
 
     ImageView imvSpeaker;
     private Button ans1;
@@ -48,7 +48,7 @@ public class Mtwo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mtwo);
+        setContentView(R.layout.activity_mtree);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar45);
         //setSupportActionBar(toolbar);
@@ -148,13 +148,14 @@ public class Mtwo extends AppCompatActivity {
     }
 
     public void sound_qu(View view) {
-        int x = Mtwo.this.getResources().getIdentifier(sound, "raw",
-                Mtwo.this.getPackageName());
-        final MediaPlayer sound = MediaPlayer.create( Mtwo.this, x );
+        int x = Mtree.this.getResources().getIdentifier(sound, "raw",
+                Mtree.this.getPackageName());
+        final MediaPlayer sound = MediaPlayer.create( Mtree.this, x );
         //Toast.makeText(getApplicationContext(),"xxxx"+x, Toast.LENGTH_SHORT).show();
 
         sound.start();
     }
 }
+
 
 
