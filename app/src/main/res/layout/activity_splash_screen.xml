@@ -4,24 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pastel"
+    android:background="@drawable/peach"
     tools:context="projectandroid.coe.application.SplashScreen">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="242dp"
-        android:fontFamily="casual"
-        android:text="Learn-Thai"
-        android:textColor="?android:attr/colorPrimary"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        tools:ignore="HardcodedText"
-        tools:targetApi="jelly_bean" />
 
 </RelativeLayout>
 

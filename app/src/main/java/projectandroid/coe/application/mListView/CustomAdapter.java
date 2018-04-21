@@ -18,6 +18,7 @@ import projectandroid.coe.application.Emer;
 import projectandroid.coe.application.General;
 import projectandroid.coe.application.Greet;
 import projectandroid.coe.application.Mone;
+import projectandroid.coe.application.Mtree;
 import projectandroid.coe.application.Mtwo;
 import projectandroid.coe.application.Number;
 import projectandroid.coe.application.Occa;
@@ -132,8 +133,12 @@ public class CustomAdapter extends BaseAdapter  {
                             Intent intent5 = new Intent(c, Tgreet.class);
                             c.startActivity(intent5);
                         }
+                        else if(checkFragment==2){
+                            Intent intent = new Intent(c, Greet.class);
+                            c.startActivity(intent);
+                        }
                         else {
-                            Intent intent4 = new Intent(c, Greet.class);
+                            Intent intent4 = new Intent(c, Mtree.class);
                             c.startActivity(intent4);
                         }
                         break;

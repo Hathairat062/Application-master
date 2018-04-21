@@ -37,11 +37,11 @@ public class moreFragment extends Fragment {
     private ArrayList<LearnShow> getmore() {
         ArrayList<LearnShow> learn = new ArrayList<>();
 
-        LearnShow learnShow = new LearnShow("Similar pronunciation", R.drawable.num);
+        LearnShow learnShow = new LearnShow("Listen & Choose", R.drawable.un);
 
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Times and Date", R.drawable.time);
+        learnShow = new LearnShow("Match Words", R.drawable.di);
         learn.add(learnShow);
 
         learnShow = new LearnShow("Greeting", R.drawable.greet);

@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -53,6 +54,14 @@ public class Mone extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar45);
         //setSupportActionBar(toolbar);
         toolbar.setTitle("Similar pronunciation");
+        setSupportActionBar(toolbar);
+
+        // Get a support ActionBar corresponding to this toolbar
+        ActionBar ab = getSupportActionBar();
+
+        // Enable the Up button
+        ab.setDisplayHomeAsUpEnabled(true);
+
 
         ans1 = (Button) findViewById(R.id.answerBtn1);
         ans2 = (Button) findViewById(R.id.answerBtn2);

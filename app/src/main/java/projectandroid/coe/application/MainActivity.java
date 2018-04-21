@@ -1,5 +1,7 @@
 package projectandroid.coe.application;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -102,5 +104,27 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
     @Override
     public void onTabReselected(TabLayout.Tab tab) {
 
+    }
+
+    @Override
+    public void onBackPressed()
+    {
+        AlertDialog.Builder builber = new AlertDialog.Builder(this);
+        builber.setTitle("Exit");
+        builber.setMessage("Do you exit program");
+        builber.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        builber.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        builber.setCancelable(false);
+        builber.show();
     }
 }

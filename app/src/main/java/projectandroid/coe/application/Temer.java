@@ -34,7 +34,7 @@ public class Temer extends AppCompatActivity {
     String quizData[][] = {
             //{"number", "right answer", "choice1", choice2", "choice3"}
             {"chûay-chăn-nòi-dâi-măi                      " + "                           ช่วยฉันหน่อยได้ไหม", "Can you help me?", "Help!", "Does anyone here speak English?", "Is there a gas station around here?"},
-            {"chăn-dtông-gaan-bpai-têe-sà-tăan-tôot                           " + "                           ฉันต้องการไปที่สถานทูต", "I want to go to the embassy.", "I want to go to the police office.", "็็I want a translator.", "I have some trouble."},
+            {"chăn-dtông-gaan-bpai-têe-sà-tăan-tôot       " + "                           ฉันต้องการไปที่สถานทูต", "I want to go to the embassy.", "I want to go to the police office.", "็็I want a translator.", "I have some trouble."},
             {"bpròht-rîak-rót-dàp-plerng                  " + "                           โปรดเรียกรถดับเพลิง", "Please call the fire department.", "Please come as soon as possible.", "Someone needs help.", "Fire!",},
             {"chăn-tam-paa-sà-bpòt-hăai                   " + "                           ฉันทำพาสปอร์ตหาย", "I lost my passport.", "I lost my phone.", "I lost the key.", "I lost my wallet."},
             {"chăn-tam-toh-rá-sàp-hăai                   " + "                            ฉันทำโทรศัพท์หาย", "I lost my phone.", "I lost the key.", "I lost my wallet.", "I lost my passport."},

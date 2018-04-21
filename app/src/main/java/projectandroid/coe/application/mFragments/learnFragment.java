@@ -42,34 +42,34 @@ public class learnFragment extends Fragment  {
     private ArrayList<LearnShow> getlearning() {
         ArrayList<LearnShow> learn = new ArrayList<>();
 
-        LearnShow learnShow = new LearnShow("Number", R.drawable.num);
+        LearnShow learnShow = new LearnShow("Number", R.drawable.n);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Times and Date", R.drawable.time);
+        learnShow = new LearnShow("Times and Date", R.drawable.r);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Greeting", R.drawable.greet);
+        learnShow = new LearnShow("Greeting", R.drawable.or);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("General Conversation", R.drawable.c);
+        learnShow = new LearnShow("General Conversation", R.drawable.y);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Direction and Place", R.drawable.direc);
+        learnShow = new LearnShow("Direction and Place", R.drawable.t);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Transportation", R.drawable.places);
+        learnShow = new LearnShow("Transportation", R.drawable.d);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Accommodation", R.drawable.accom);
+        learnShow = new LearnShow("Accommodation", R.drawable.a);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Emergency", R.drawable.emer);
+        learnShow = new LearnShow("Emergency", R.drawable.e);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Shopping", R.drawable.shop);
+        learnShow = new LearnShow("Shopping", R.drawable.s);
         learn.add(learnShow);
 
-        learnShow = new LearnShow("Weather", R.drawable.occa);
+        learnShow = new LearnShow("Weather", R.drawable.w);
         learn.add(learnShow);
 
         return learn;
